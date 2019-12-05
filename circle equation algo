@@ -1,0 +1,44 @@
+import turtle
+import math
+turtle.Turtle()
+
+def circle(r):
+    x=0
+    for i in range(0,200):
+        z=r**2-i**i
+        y=math.sqrt(z)
+        turtle.penup()
+        turtle.goto(i,y)
+        turtle.pendown()
+        turtle.goto(i+1,y+1)
+        turtle.penup()
+        turtle.goto(-i,y)
+        turtle.pendown()
+        turtle.goto(-i-1,y+1)
+        turtle.penup()
+        turtle.goto(i,-y)
+        turtle.pendown()
+        turtle.goto(i+1,-y-1)
+        turtle.penup()
+        turtle.goto(-i,-y)
+        turtle.pendown()
+        turtle.goto(-i-1,-y-1)
+        turtle.penup()
+        turtle.goto(y,i)
+        turtle.pendown()
+        turtle.goto(y+1,i+1)
+        turtle.penup()
+        turtle.goto(-y,i)
+        turtle.pendown()
+        turtle.goto(-y-1,i+1)
+        turtle.penup()
+        turtle.goto(y,-i)
+        turtle.pendown()
+        turtle.goto(y+1,-i-1)
+        turtle.penup()
+        turtle.goto(-y,-i)
+        turtle.pendown()
+        turtle.goto(-y-1,-i-1)
+        turtle.penup()
+circle(200)
+        
